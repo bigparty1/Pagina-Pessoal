@@ -4,9 +4,11 @@
   "description": "Uma página pessoal no estilo currículo, desenvolvida com HTML5, CSS3 e TypeScript.",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc && cp src/index.html dist/ && cp src/style.css dist/",
+    "build": "tsc && npm run copy:static",
+    "copy:static": "cpx \"src/*.html\" dist/ && cpx \"src/*.css\" dist/",
+    "watch:static": "cpx \"src/*.{html,css}\" dist/ --watch",
+    "dev": "concurrently \"npx tsc --watch\" \"npm run watch:static\" \"live-server dist\"",
     "clean": "rm -rf dist",
-    "server": "cd dist && python3 -m http.server 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +22,11 @@
     "url": "https://github.com/bigparty1/Pagina-Pessoal/issues"
   },
   "homepage": "https://github.com/bigparty1/Pagina-Pessoal#readme",
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "^24.0.10",
+    "concurrently": "^9.2.0",
+    "cpx": "^1.5.0",
+    "live-server": "^1.2.2",
     "typescript": "^5.8.3"
   }
 }
