@@ -2,8 +2,10 @@
   "name": "pagina-pessoal",
   "version": "1.0.0",
   "description": "Uma página pessoal no estilo currículo, desenvolvida com HTML5, CSS3 e TypeScript.",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
+    "build": "tsc && cp src/index.html dist/ && cp src/style.css dist/",
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
