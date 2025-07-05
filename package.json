@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/bigparty1/Pagina-Pessoal/issues"
   },
-  "homepage": "https://github.com/bigparty1/Pagina-Pessoal#readme"
+  "homepage": "https://github.com/bigparty1/Pagina-Pessoal#readme",
+  "dependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  }
 }
