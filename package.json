@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc && npm run copy:static",
-    "copy:static": "cpx \"src/*.html\" dist/ && cpx \"src/*.css\" dist/",
+    "copy:static": "cpx \"src/*.html\" dist/ && cpx \"src/*.css\" dist/ && cpx \"resources/*\" dist/resources/",
     "watch:static": "cpx \"src/*.{html,css}\" dist/ --watch",
     "dev": "concurrently \"npx tsc --watch\" \"npm run watch:static\" \"live-server dist\"",
     "clean": "rm -rf dist",
