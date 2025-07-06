@@ -256,6 +256,13 @@ body {
     font-size: var(--font-size-xl);
 }
 
+.section-subtitle {
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
 /* Experiencias profissionais */
 /* .experience-item {
     margin-bottom: var(--spacing-xl);
