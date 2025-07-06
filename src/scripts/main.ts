@@ -8,4 +8,4 @@ import "./hardSkillCarousel.js";
 
 import "./softSkillCarousel.js";
 
-import "./projectCarousel.js";
+import "./projectsCarousel.js";
