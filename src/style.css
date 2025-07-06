@@ -203,12 +203,12 @@ body {
     display: flex;
     justify-content: center;
     background: var(--surface);
+    box-shadow: var(--shadow);
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-xl);
     margin-top: var(--spacing-2xl);
     border: 1px solid var(--border);
     gap: var(--spacing-md);
-    box-shadow: var(--shadow);
 }
 
 .footer p {
