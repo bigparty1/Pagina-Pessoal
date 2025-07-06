@@ -25,6 +25,7 @@ Este projeto foi desenvolvido para a tarefa de desenvolvimento de uma página pe
 │       ├── experienceCarousel.ts
 │       └── hardSkillCarousel.ts
 │       └── softSkillCarousel.ts
+│       └── projectsCarousel.ts
 ├── package.json         # Configurações do projeto e scripts npm
 ├── tsconfig.json        # Configuração do TypeScript
 └── README.md            # Este arquivo
