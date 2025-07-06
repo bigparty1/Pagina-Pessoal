@@ -264,18 +264,6 @@ body {
 }
 
 /* Experiencias profissionais */
-/* .experience-item {
-    margin-bottom: var(--spacing-xl);
-    padding-bottom: var(--spacing-xl);
-    border-bottom: 1px solid var(--border);
-} */
-/* 
-.experience-item:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-} */
-
 .job-header {
     display: flex;
     justify-content: space-between;
@@ -357,7 +345,7 @@ body {
 
 .carousel-prev, .carousel-next {
     background: var(--primary-color);
-    color: var(--text-primary);
+    color: white;
     border: none;
     border-radius: 50%;
     padding: 0;
