@@ -91,4 +91,4 @@ Este projeto foi desenvolvido para a tarefa de desenvolvimento de uma página pe
 
 ## 📄 Licença
 
-Este projeto está sob a licença ISC. Veja o arquivo [LICENSE](LICENSE) para
+Este projeto está sob a licença ISC. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
