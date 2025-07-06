@@ -46,6 +46,7 @@
   }
 }
 
+/* Geral */
 body {
     font-family: var(--font-family);
     font-size: var(--font-size-base);
@@ -64,6 +65,7 @@ body {
     flex-direction: column;
 }
 
+/* Cabeçalho */
 .header {
     background: var(--surface);
     border-radius: var(--border-radius-lg);
@@ -116,7 +118,7 @@ body {
 .profile-info .description {
     color: var(--text-secondary);
     line-height: 1.7;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .contact-info {
@@ -126,11 +128,13 @@ body {
 }
 
 .contact-item {
-    display: flex;
-    align-items: center;
+    text-align: center;
     gap: var(--spacing-sm);
     color: var(--text-secondary);
     transition: var(--transition);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .contact-item:hover {
@@ -143,4 +147,53 @@ body {
     font-size: var(--font-size-lg);
     width: 20px;
     text-align: center;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Menu de context */
+.custom-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--spacing-xs) 0;
+    width: 250px;
+    min-width: 150px;
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.custom-menu.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+.custom-menu button {
+    background: none;
+    border: none;
+    width: 95%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: left;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.custom-menu button:hover {
+    background: var(--background);
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
 }
