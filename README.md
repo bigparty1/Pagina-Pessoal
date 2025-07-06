@@ -72,6 +72,11 @@ Este projeto foi desenvolvido para a tarefa de desenvolvimento de uma página pe
 - [cpx](https://www.npmjs.com/package/cpx) (cópia de arquivos estáticos)
 - [concurrently](https://www.npmjs.com/package/concurrently) (execução paralela de scripts)
 - [live-server](https://www.npmjs.com/package/live-server) (servidor local com live reload)
+- [javascript-obfuscator](https://www.npmjs.com/package/javascript-obfuscator) (para ofuscação de código JavaScript)
+- [esbuild](https://www.npmjs.com/package/esbuild) (para agregação e minificação de arquivos JavaScript)
+- [replace-in-file](https://www.npmjs.com/package/replace-in-file) (para substituições de texto em arquivos)
+- [html-minifier-terser](https://www.npmjs.com/package/html-minifier-terser) (minificação de HTML)
+- [clean-css-cli](https://www.npmjs.com/package/clean-css-cli) (minificação de CSS)
 
 ---
 
@@ -79,7 +84,7 @@ Este projeto foi desenvolvido para a tarefa de desenvolvimento de uma página pe
 
 - **Currículo digital** com informações profissionais e de contato
 - **Menus de contexto** para copiar e-mail/telefone ou abrir apps padrão
-- **Carrossel de experiências profissionais**
+- **Carrossel de exibição** para exibições de secções com múltiplas informações
 - **Responsivo** e com suporte a tema escuro/claro via preferências do sistema
 
 ---
