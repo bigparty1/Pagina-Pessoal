@@ -5,3 +5,5 @@ import "./cellphoneContextMenu.js";
 import "./experienceCarousel.js";
 
 import "./hardSkillCarousel.js";
+
+import "./softSkillCarousel.js";
