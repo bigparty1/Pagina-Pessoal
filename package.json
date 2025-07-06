@@ -4,11 +4,18 @@
   "description": "Uma página pessoal no estilo currículo, desenvolvida com HTML5, CSS3 e TypeScript.",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc && npm run copy:static",
+    "build": "tsc && npm run copy:static && npm run obfuscate && npm run bundle && npm run rm-scripts && npm run replace-script && npm run minify-css && npm run replace-css && npm run minify-html",
     "copy:static": "cpx \"src/*.html\" dist/ && cpx \"src/*.css\" dist/ && cpx \"resources/*\" dist/resources/",
     "watch:static": "cpx \"src/*.{html,css}\" dist/ --watch",
     "dev": "concurrently \"npx tsc --watch\" \"npm run watch:static\" \"live-server dist\"",
     "clean": "rm -rf dist",
+    "obfuscate": "javascript-obfuscator dist --output dist",
+    "bundle": "esbuild dist/scripts/main.js --bundle --outfile=dist/bundle.js --minify",
+    "rm-scripts": "rm -rf dist/scripts",
+    "replace-script": "replace-in-file 'scripts/main.js' 'bundle.js' dist/index.html",
+    "minify-css": "cleancss -o dist/style.min.css dist/style.css",
+    "replace-css": "rm -rf dist/style.css && mv dist/style.min.css dist/style.css",
+    "minify-html": "html-minifier-terser dist/index.html -o dist/index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,9 +31,14 @@
   "homepage": "https://github.com/bigparty1/Pagina-Pessoal#readme",
   "devDependencies": {
     "@types/node": "^24.0.10",
+    "clean-css-cli": "^5.6.3",
     "concurrently": "^9.2.0",
     "cpx": "^1.5.0",
+    "esbuild": "^0.25.5",
+    "html-minifier-terser": "^7.2.0",
+    "javascript-obfuscator": "^4.1.1",
     "live-server": "^1.2.2",
+    "replace-in-file": "^8.3.0",
     "typescript": "^5.8.3"
   }
 }
