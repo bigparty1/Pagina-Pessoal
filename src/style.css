@@ -197,3 +197,20 @@ body {
     color: var(--primary-color);
     border-radius: var(--border-radius);
 }
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    background: var(--surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+    border: 1px solid var(--border);
+    gap: var(--spacing-md);
+}
+
+.footer p {
+    color: var(--text-secondary);
+    margin: 0;
+}
