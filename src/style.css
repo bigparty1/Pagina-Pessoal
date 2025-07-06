@@ -255,3 +255,134 @@ body {
     color: var(--primary-color);
     font-size: var(--font-size-xl);
 }
+
+/* Experiencias profissionais */
+/* .experience-item {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--border);
+} */
+/* 
+.experience-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+} */
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-sm);
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.job-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.job-period {
+    background: var(--primary-color);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.company {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+}
+
+.job-description {
+    list-style: none;
+    margin-left: var(--spacing-md);
+}
+
+.job-description li {
+    position: relative;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-lg);
+}
+
+.job-description li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: var(--font-size-sm);
+}
+
+/* Carousel */
+.carousel-horizontal {
+    display: flex;
+}
+
+.carousel-content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0 var(--spacing-lg);
+}
+
+.carousel-list {
+    display: flex;
+    transition: transform 0.3s;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.3s;
+}
+
+.carousel-prev, .carousel-next {
+    background: var(--primary-color);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 35px;;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: var(--font-size-lg);
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background: var(--accent-color);
+}
+
+.carousel-indicator-list {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    list-style: none;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 var(--spacing-xs);
+    transition: background 0.3s;
+}
+.carousel-indicator.active {
+    background: var(--primary-color);
+}
