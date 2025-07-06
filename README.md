@@ -2,6 +2,8 @@
 
 Uma página pessoal no estilo currículo, desenvolvida com HTML5, CSS3 e TypeScript.
 
+Você pode acessar o deploy deste projeto [neste link](https://www.inf.ufrgs.br/~ksgomes/).
+
 Este projeto foi desenvolvido para a tarefa de desenvolvimento de uma página pessoal do curso Dev. Full Stack Jr. (+praTi & Codifica).
 
 ---
@@ -21,7 +23,8 @@ Este projeto foi desenvolvido para a tarefa de desenvolvimento de uma página pe
 │       ├── emailContextMenu.ts
 │       ├── cellphoneContextMenu.ts
 │       ├── experienceCarousel.ts
-│       └── ... outros módulos
+│       └── hardSkillCarousel.ts
+│       └── softSkillCarousel.ts
 ├── package.json         # Configurações do projeto e scripts npm
 ├── tsconfig.json        # Configuração do TypeScript
 └── README.md            # Este arquivo
