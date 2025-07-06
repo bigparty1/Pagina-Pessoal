@@ -233,14 +233,29 @@ body {
     transition: var(--transition);
 }
 
+.section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.45);
+}
+
 .section p {
     color: var(--text-secondary);
     line-height: 1.7;
 }
 
-.section:hover {
-    transform: scale(1.01);
-    box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.45);
+.section a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.section a:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .section-title {
