@@ -208,6 +208,7 @@ body {
     margin-top: var(--spacing-2xl);
     border: 1px solid var(--border);
     gap: var(--spacing-md);
+    box-shadow: var(--shadow);
 }
 
 .footer p {
