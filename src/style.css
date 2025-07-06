@@ -291,6 +291,7 @@ body {
     border-radius: var(--border-radius);
     font-size: var(--font-size-sm);
     font-weight: 500;
+    margin-right: var(--spacing-md);
 }
 
 .company {
