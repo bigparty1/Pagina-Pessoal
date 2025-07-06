@@ -4,10 +4,10 @@
   "description": "Uma página pessoal no estilo currículo, desenvolvida com HTML5, CSS3 e TypeScript.",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc && npm run copy:static && npm run obfuscate && npm run bundle && npm run rm-scripts && npm run replace-script && npm run minify-css && npm run replace-css && npm run minify-html",
+    "build": "npm run clean && tsc && npm run copy:static && npm run obfuscate && npm run bundle && npm run rm-scripts && npm run replace-script && npm run minify-css && npm run replace-css && npm run minify-html",
     "copy:static": "cpx \"src/*.html\" dist/ && cpx \"src/*.css\" dist/ && cpx \"resources/*\" dist/resources/",
     "watch:static": "cpx \"src/*.{html,css}\" dist/ --watch",
-    "dev": "concurrently \"npx tsc --watch\" \"npm run watch:static\" \"live-server dist\"",
+    "dev": "npm run copy:static && concurrently \"npx tsc --watch\" \"npm run watch:static\" \"live-server dist\"",
     "clean": "rm -rf dist",
     "obfuscate": "javascript-obfuscator dist --output dist",
     "bundle": "esbuild dist/scripts/main.js --bundle --outfile=dist/bundle.js --minify",
